@@ -1,0 +1,30 @@
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    max-width: 95%;
+    margin: 50px auto 150px auto;
+}
+
+.settings-container > .settings-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.settings-container > .settings-nav > a {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.settings-container > .settings-nav > a.selected {
+    text-decoration: underline;
+}
+
+.settings-container > .settings-components > * {
+    margin-top: 0px;
+}
+
+.settings-container > .settings-components  {
+    margin-top: 50px;
+}

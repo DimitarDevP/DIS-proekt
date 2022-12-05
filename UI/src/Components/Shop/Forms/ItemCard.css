@@ -1,0 +1,39 @@
+.item-card {
+    margin: 10px auto;
+}
+
+.item-card > h4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.item-card > span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-card > span > * {
+    width: 49%;
+}
+
+.add-item,
+.remove-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 25px;
+    height: 25px;
+    background: #099C7A;
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.remove-item {
+    background: #D64933;
+    margin-bottom: 0px;
+}

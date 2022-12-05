@@ -1,0 +1,181 @@
+.status {
+    color: #FFF !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background: unset !important;
+    
+}
+
+.liveStatus {
+    text-shadow:
+    -1px -1px 0 rgba(100, 100, 100, 0.2),  
+     1px -1px 0 rgba(100, 100, 100, 0.2),
+    -1px  1px 0 rgba(100, 100, 100, 0.2),
+     1px  1px 0 rgba(100, 100, 100, 0.2);
+}
+
+.status > p {
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 5px;
+    max-width: 80px;
+}
+
+@media only screen and (max-width : 1550px) {
+    .status > p {
+        min-width: 50px;
+    }
+}
+
+.Pending, .Pending > p,
+.Processed > p,
+.Processed,
+.Emailed,
+.Emailed > p {
+    background: #AAAAFF;
+}
+
+.Active, .Active > p {
+    background: #09BC8A;
+}
+
+.Completed, .Completed > p {
+    background: #6E44AA;
+}
+
+.Requested > p, .Ordered > p, .Accepted, .Accepted > p {
+    background: #006CDC;
+}
+
+.Ordered-Light {
+    box-shadow: inset 0 0 0px 2px #006CDC;
+    color: #006CDC !important;
+    background: rgba(0, 108, 220, 0.1);
+    box-sizing: border-box;
+    padding: 6px !important;
+}
+
+.Allocated, .Allocated > p {
+    background: #23395D;
+}
+
+.Declined, .Declined > p {
+    background: #FFAAAA;
+}
+
+.Decline.Request,
+.Decline.Request > p {
+    background: #FFBBBB
+}
+
+.Cancelled, .Cancelled > p, .No > p,
+.Archived > p,
+.Expired > p {
+    background: #E03616;
+}
+
+.Ready, .Approved > p, .Approved, .Ready > p, .Online, .Online > p, .Yes > p {
+    background: #09BC8A;
+}
+
+.Ready.invert,
+.Ready.invert > p {
+    border: 2px solid #09BC8A !important;
+    color: #09BC8A !important;
+    background-color: rgba(9, 188, 138, 0.1);
+    font-weight: 600;
+     cursor: default !important;
+}
+
+.On, .On > p {
+    background: #66AA66;
+}
+
+.Started, .Started > p {
+    background: #5675E8;
+}
+
+.Paused, .Paused > p {
+    background: #66CC88;
+}
+
+.Resumend, 
+.Resumend > p {
+    background: #338833;
+}
+
+.In.Transit,
+.In.Transit > p {
+    background: #338833
+}
+
+.Finished, 
+.Finished > p,
+.Successful,
+.Successful > p {
+    background: #6E44AA;
+}
+
+.Re-worked, 
+.Re-worked > p {
+    background: #D16644;
+} 
+
+.Processing > p,
+.Processing {
+    background: #7700FF;
+}
+
+.Credited,
+.Dispatched > p,
+.Credited > p {
+    background: #EE92C2;
+}
+
+.Exceeded, 
+.Exceeded > p,
+.Applied,
+.Applied > p {
+    background: #F24982;
+}
+
+.Re-working, 
+.Re-working > p {
+    background: #CF9683;
+}
+
+.Credit, 
+.Credit > p {
+    background: #DD92C2;
+}
+
+
+.Cancel,
+.Rejected > p,
+.Cancel > p {
+    background: #D64933;
+}
+
+.Deleted,
+.Deleted > p {
+    background: #AAA;
+}
+
+.Applicant.Assessment.Course,
+.Applicant.Assessment.Course > p {
+    background: #E9Cc00;
+}
+
+.Passed.Course,
+.Passed.Course > p {
+    background: #A98c00;
+}
+
+.Working > p {
+    background: #66AA66;
+}
+
+.Not.Working > p {
+    background: #D64933;
+}

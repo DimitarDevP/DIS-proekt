@@ -1,0 +1,197 @@
+#Nav {
+    position: fixed;
+    background: #24344b;
+    -moz-box-shadow: 0 3.15rem 3.75rem 0 rgba(31, 45, 65, 0.15);
+    box-shadow: 0 3.15rem 3.75rem 0 rgba(31, 45, 65, 0.15);
+    width: 0px;
+    /* height: 100vh; */
+    z-index: 7;
+    overflow: hidden;
+    transition: 300ms;
+    white-space: nowrap;
+    height: calc(100vh - 40px);
+    padding-bottom: 40px;
+}
+
+#Nav > div:nth-child(1) {
+    text-align: center;
+    margin: 20px 0px;
+    margin-top: 50px;
+}
+
+#Nav > div:nth-child(1) > h1 {
+    font-weight: 350;
+    color: #5F7FFb;
+    cursor: pointer;
+}
+
+#Nav > div:nth-child(2) > p >svg {
+    color: #5f6c7d;
+}
+
+#Nav > div:nth-child(2) > p {
+    display: flex;
+    align-items: center;
+    color: #a2acba;
+    cursor: pointer;
+    font-size: 1.15em;
+    padding: 12px 20px;
+}
+
+#Nav > div:nth-child(2) > p > a {
+    color: #a2acba;
+    cursor: pointer;
+    font-size: 1.15em;
+    display: block;
+    width: calc(100% - 20px);
+}
+
+#Nav > div:nth-child(2) > p:hover > a {
+    color: #EEE;
+}
+
+#Nav > div:nth-child(2) > p > svg:nth-child(1) {
+    margin-right: 20px;
+    stroke: #5f6c7d;
+}
+
+#Nav > div:nth-child(2) > p > svg:nth-child(1) > path {
+    stroke: #5f6c7d;
+}
+
+#Nav > div:nth-child(2) > p > svg:nth-child(2) {
+    margin-right: 0px;
+    margin-left: auto;
+    transition: 150ms;
+    transform: rotate(-90deg);
+}
+
+#Nav > div:nth-child(2) > p.showing > svg:nth-child(2) {
+    transform: rotate(0deg);
+}
+
+#Nav > div:nth-child(2) > p:hover,
+#Nav > div:nth-child(2) > span > a:hover,
+#Nav > div:nth-child(2) > span > p:hover {
+    color: #EEE;
+}
+
+#Nav > div:nth-child(2) > span > a > span {
+    display: inline-flex;
+    background: red;
+    width: 1em;
+    font-weight: bolder;
+    color: #FFF;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50%;
+}
+
+#Nav > div:nth-child(2) > span {
+    display: block;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 180ms;
+}
+
+#Nav > div:nth-child(2) > span.showing {
+    max-height: 600px;
+    margin-left: 30px;
+    border-left: #a2acba solid 1px;
+}
+
+#Nav > div:nth-child(2) > span > a,
+#Nav > div:nth-child(2) > span > p {
+    display: block;
+    color: #a2acba;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#Nav > div:nth-child(3) {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    color: #24344b;
+    cursor: pointer;
+    user-select: none;
+    font-size: 2.2em;
+}
+
+#Nav > div:nth-child(3).reduced {
+    left: 300px !important;
+}
+
+#Nav.reduced {
+    width: 280px;
+}
+
+#App.reduced > .container {
+    width: calc(100% - 280px) !important;
+    margin-left: 280px !important;
+}
+
+#Nav >div:nth-child(2) {
+    max-height: calc(100% - 118px);
+    overflow-y: scroll;
+}
+
+#Nav >div:nth-child(2)::-webkit-scrollbar {
+    width: 9px !important;
+    background: transparent;
+}
+
+#Nav >div:nth-child(2)::-webkit-scrollbar-thumb {
+    background: #a2acba;
+}
+
+@media only screen and (max-width : 950px) {
+    #Nav {
+        width: 100% !important;
+    }
+
+    #Nav.reduced {
+        width: 0px !important;
+    }
+
+    #Nav >div:nth-child(2) {
+        max-height: calc(100% - 78px);
+        overflow-y: scroll;
+    }
+
+    #Nav > div:nth-child(3) {
+        top: unset !important;
+        left: unset !important;
+        bottom: 10px !important;
+        right: 10px !important;
+        z-index: 8;
+        color: #FFF;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+    #Nav > div:nth-child(3).reduced {
+        top: unset !important;
+        left: unset !important;
+        bottom: 10px !important;
+        right: 10px !important;
+        z-index: 8;
+        color: #FFF;
+        background: #24344b;
+        border-radius: 50%;
+    }
+
+    #App.reduced > .container {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+    #Nav {
+        /* display: none; */
+    }
+}

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Calendar {
+    min-width: 330px;
+}
+
+.container {
+    background: #eff3f9;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    transition: 300ms;
+    box-sizing: border-box;
+}
+
+.container>.details {
+    background-color: #1da1f5 !important;
+    background-image: linear-gradient(135deg, #1da1f5 0%, rgba(128, 57, 218, 0.8) 100%) !important;
+    padding: 50px 110px 150px 110px;
+}
+
+.container>.details > a {
+    display: block;
+    width: 250px;
+    margin: 20px auto 0px auto;
+    background: #004CAC;
+    text-align: center;
+    padding: 6px 0px;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.container>.details>h1,
+.container>.details>h3,
+.container>.details>span>h1,
+.container>.details>span>h3 {
+    color: #FFF;
+}
+
+*::-webkit-scrollbar-track,
+*::-moz-scrollbar-track {
+    display: none !important;
+    background: transparent;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar,
+*::-moz-scrollbar {
+    width: 0px;
+    height: 0px !important;
+    background: transparent;
+}
+
+* {
+    scrollbar-color: rgba(80, 80, 180, 0.05) rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb,
+*::-moz-scrollbar-thumb {
+    width: 0px !important;
+    height: 10px !important;
+    background-color: #6900c7;
+}
+
+body::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+@media only screen and (max-width : 950px) {
+    .container>.details {
+        padding: 50px 5% 150px 5%;
+    }
+}
+
+.error {
+    background: #e81500
+}
+
+.success {
+    background: #00ac69
+}
+
+.alert {
+    background: #C9ac00
+}
+
+body {
+    scrollbar-width: 0px !important;
+}
+
+.top-off {
+    color: #004CAC;
+    background: #FFF;
+    border-radius: .42rem;
+    border: 2px solid #1da1f5;
+    padding: 8px 10px;
+    font-size: 1em;
+    font-weight: 520;
+}
+
+.inventory-container > .table-container {
+    margin-top: 20px;
+}
+
+.inventory-container {
+    margin-top: -100px;
+}

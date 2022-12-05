@@ -1,0 +1,110 @@
+.loginContainer {
+    background-image: linear-gradient(180deg, #1da1f5 0%, rgba(128, 57, 218, 0.8) 100%) !important;
+    /* background: #1da1f5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginContainer > .login-wrapper {
+    display: flex;
+    width: 80%;
+    background: transparent;
+    background-color: transparent;
+    border-radius: .45rem;
+    overflow: hidden;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(40,60,80,.45);
+    background-color: #fff;
+}
+
+.loginContainer > .login-wrapper > img {
+    width: 50%;
+    /* min-width: 500px; */
+    background: #FFF;
+}
+
+.loginContainer > .login-wrapper > .form {
+    border-radius: 0px;
+    box-shadow: none;
+    width: 50%;
+    margin-top: 0px !important;
+    box-sizing: border-box; 
+}
+
+.loginContainer > .login-wrapper > .form > form {
+    margin-top: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+
+.loginContainer > .login-wrapper > .form > h3 {
+    display: none;
+}
+
+.login-wrapper > .form {
+    padding: 50px 25px;
+    box-sizing: border-box;
+}
+
+.login-wrapper > .form > h1 {
+    color: #444;
+    text-align: center;
+    margin: 20px auto 80px auto;
+}
+
+.login-wrapper > .form > .input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.login-wrapper > .form > .input > label {
+    margin-bottom: 8px;
+}
+
+.login-wrapper > .form > .input > input {
+    background: none;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: .42rem;
+    border: 2px solid #DFDFDF;
+    font-size: 1.1em;
+    outline: none !important;
+}
+
+.login-wrapper > .form > .input > input:focus {
+    /* outline: none; */
+}
+
+.login-wrapper > .form > button {
+    width: 50%;
+    margin: 0px auto;
+    background: #1da1f5;
+    color: #FFF;
+    border: none;
+    border-radius: .42rem;
+    padding: 12px;
+}
+
+@media only screen and (max-width : 1250px) {
+    .login-wrapper {
+        width: 95% !important;
+    }
+}
+
+@media only screen and (max-width : 950px) {
+    .login-wrapper > * {
+        width: 100% !important;
+    }
+
+    .login-wrapper {
+        flex-direction: column;
+        border-radius: 0px !important;
+        width: 100% !important;
+        min-height: 100vh;
+    }
+}

@@ -1,0 +1,27 @@
+.warehouse-settings-container {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    max-width: 95%;
+    margin: 50px auto;
+}
+
+.warehouse-settings-container > .nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.warehouse-settings-container > .nav-links > a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+    padding: 8px;
+}
+
+.warehouse-settings-container > .nav-links > a.selected {
+    text-decoration: underline;
+}
+
+.warehouse-settings-container > .component-wrapper > * {
+    margin-top: 50px;
+}

@@ -1,0 +1,435 @@
+* {
+    --cl-color-primary: #0061f2 !important;
+}
+
+.item-with-icon {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-with-icon > img {
+    width: 30px;
+}
+
+.item-with-icon > p {
+    padding-left: 12px;
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+}
+
+.form > form > div.date > div > input {
+    height: 39px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #e3e6ec;
+    font-size: 15px;
+}
+
+.dropdown-content > .panel-content {
+    box-shadow: none !important;
+}
+
+.dropdown-content > .panel-content > .select-panel > .search > input {
+    border: 2px solid #e3e6ec;
+    border-radius: .42rem;
+}
+
+.options::-webkit-scrollbar-track {
+    background-color: #FFF;
+}
+
+.dropdown-content > .panel-content >.select-panel > .options {
+    background: #FFF !important;
+    border: 2px solid #e3e6ec;
+    border-radius: .42rem;
+    position: relative;
+    margin-top: 7px;
+}
+
+.form {
+    width: 950px;
+    max-width: 95% !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: .5rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
+
+.form > h3 {
+    padding: 24px 21px;
+    /* color: #0061f2; */
+    color: #000;
+    background-color: rgba(0,0,0,.03);
+}
+
+
+.form > form {
+    padding: 21px;
+}
+
+/* .form > form > .file > input, */
+.form > form > .file > button {
+    background-color: #0061f2;
+    color: #FFF;
+    border: none;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form > form > .checkbox,
+.form > form > .input, .form > form > div > span > .input,
+.form > form > .select, .form > form > div > span > .multiple,
+.form > form > .file,
+.form > form > .multiple,
+.form > form > .date,
+.form > form > .value-ranges > .val-range > .input,
+.form > form > .radio {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form > form > .radio > span {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0.25rem 0 rgba(31, 45, 65, 0.15);
+}
+
+.form > form > .radio > span > .option {
+    padding: 12px;
+    -moz-box-shadow:    inset 0 0 1px rgba(90, 90, 90, 0.5);
+    -webkit-box-shadow: inset 0 0 1px rgba(90, 90, 90, 0.5);
+    box-shadow:         inset 0 0 1px rgba(90, 90, 90, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.form > form > .radio > span > .option > p {
+    margin-left: 30px;
+    color: #555;
+}
+
+.form > form > .radio > span > .option::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FFF;
+    border: 1px solid #777;
+    position: absolute;
+}
+
+.form > form > .radio > span > .option.selected::before {
+    border-color: #0081f2;
+    border-width: 6px;
+    width: 7px;
+    height: 7px;
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715) 100ms;
+}
+
+.form > form > .value-ranges > .val-range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 16px; */
+}
+
+.form > form > .value-ranges > .val-range > button {
+    background-color: #0061f2;
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: .42rem;
+}
+
+.form > form > .file.right {
+    margin-left: auto;
+}
+
+.form > form > .file.right > p {
+    text-align: right;
+}
+
+.form > form > .input > p, .form > form > div > span > .input > p,
+.form > form > .select > p, .form > form > div > span > .multiple > p,
+.form > form > .multiple > p,
+.form > form > .file > .fieldAlert,
+.form > form > .value-ranges > .val-range > .input > p {
+    font-size: 0.85em;
+    color: red;
+    margin-left: 5px;
+    margin-top: 2.5px;
+    margin-bottom: 0px;
+}
+
+.form > form > .input > p.waring, .form > form > div > span > .input > p.warning, 
+.form > form > .file > p.waring {
+    color: #C9ac00 !important;
+    font-weight: bold;
+}
+
+.form > form > .input > label, .form > form > div > span > .input > label,
+.form > form > .value-ranges > .val-range > .input > label, 
+.form > form > .select > label, .form > form > div > span > .multiple > label,
+.form > form .file > p,
+.form > form > .multiple > label,
+.form > form > .date > label,
+.form > form > .timestamp > label,
+.form > form > .radio > label,
+.form > form > .checkbox > label {
+    margin-bottom: 8px;
+    color: #777;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.form > form > .input > input::placeholder, .form > form > div > span > .input > input::placeholder { color : #a3a6ac}
+.form > form > .input > textarea::placeholder { color : #a3a6ac}
+
+.form > form > .input > textarea {
+    min-width: calc(100% - 36px);
+    max-width: calc(100% - 36px);
+    min-height: 80px;
+    max-height: 100px;
+}
+
+.form > form > .input > input, .form > form > div > span > .input > input,
+.form > form > .value-ranges > .val-range > .input > input,
+.form > form > .input > textarea,
+.form > form > .select > select,
+.dropdown-heading,
+.form > form > .date > span {
+    border: 2px solid #e3e6ec;
+    border-radius: 5px !important;
+    overflow: hidden;
+    padding: 8px 16px !important;
+}
+
+.dropdown-content {
+    z-index: 3;
+}
+
+.form > form > .input > textarea {
+    font-family: Tahoma, "Quicksand", sans-serif;
+}
+
+.form > form > .input > textarea {
+    padding: 10.5px 16px !important;
+}
+
+.form > form > .input > .overloaded > .form > form > div > span > .input > .overloaded {
+    display: flex;
+    margin-top: 10px;
+}
+
+.form > form > .input > .overloaded > a, .form > form > div > span > .input > .overloaded > a {
+    color: #0061f2;
+    text-decoration: none;
+    margin-right: 10px;
+    text-decoration: underline;
+    flex-wrap: wrap;
+}
+
+.form > form > .input > input:focus, .form > form > div > span > .input > input:focus,
+.form > form > .input > textarea:focus,
+.form > form > .select > select:focus,
+.form > form > .date > span:focus-within,
+#App > div > div.container > div.form > form > div.date > div > input:focus,
+.form > form > .value-ranges > .val-range > .input > input:focus {
+    border-color:#0061f2 !important;
+    outline: none;
+}
+
+.form > form > button,
+.form > form > a {
+    background: #0061f2;
+    border-radius: 5px  !important;
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+    max-width: 140px;
+    display: block;
+    margin: 24px 0px 32px auto;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form > form > button.danger {
+    background: #e81500;
+}
+
+.form > form > span > a {
+    background: #0061f2;
+    border-radius: 5px  !important;
+    text-align: center;
+    color: #FFF;
+    margin: 24px 24px 32px 0px;
+    border: none;
+    padding: 12px 24px;
+}
+
+.form > form > a,
+.form > form > span > a {
+    width: 85px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.form > form > .file {
+    width: 100%;
+    max-width: 300px;
+}
+
+.form > form > .file > input {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.form > form .file > button {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.form > form .file > img {
+    margin-top: -5px;
+    z-index: 2;
+}
+
+.form > form .file > textarea {
+    border-color: #e3e6ec;
+    border-radius: 5px;
+    margin-top: -5px;
+    z-index: 1;
+}
+
+.form > form > .date > span {
+    display: flex;
+}
+
+.form > form > .date > span > input {
+    width: 20%;
+    text-align: center;
+    border: none;
+}
+
+.form > form > .date > span > p {
+    border: 1px solid #e3e6ec;
+}
+
+.form > form > .timestamp {
+    margin-bottom: 16px;
+}
+
+.form > form > .timestamp > label {
+    display: block;
+}
+
+.form > form > .timestamp > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #e3e6ec;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42) !important;
+    /* border: none !important; */
+}
+
+.form > form > .timestamp > div > div {
+    width: 50%;
+}
+.form > form > .timestamp > div > div > div {
+    height: 16px;
+    line-height: 16px;
+}
+
+.multi-select {
+    --rmsc-main: transparent !important;
+    --rmsc-hover: #f1f3f5;
+    --rmsc-selected: #e2e6ea;
+    --rmsc-border: transparent !important;
+    --rmsc-gray: #777 !important;
+    --rmsc-bg: #fff;
+    --rmsc-p: 10px; /* Spacing */
+    --rmsc-radius: 4px; /* Radius */
+    --rmsc-h: 38px; /* Height */
+  }
+
+
+  @media only screen and (max-width : 950px) {
+    .form > form > .file {
+        max-width: unset;
+    }
+}
+
+
+.form > form > .checkbox > span {
+    width: 76px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #e3e6ec;
+    border-radius: 5px !important;
+    position: relative;
+    cursor: pointer;
+}
+
+.form > form > .checkbox > span > svg {
+    width: 50%;
+    /* z-index: 1; */
+    position: absolute;
+}
+
+.form > form > .checkbox > span > svg:nth-child(3) {
+    left: 50%;
+}
+
+.form > form > .checkbox > span.checked   > svg:nth-child(2) { color: #e3e6ec; }
+.form > form > .checkbox > span.checked   > svg:nth-child(3) { color: #53565c; }
+.form > form > .checkbox > span.unchecked > svg:nth-child(3) { color: #e3e6ec; }
+.form > form > .checkbox > span.unchecked > svg:nth-child(2) { color: #53565c; }
+
+.form > form > .checkbox > span > .slider {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    z-index: 0;
+    left: 50%;
+    transition: 50ms linear;
+}
+
+.form > form > .checkbox > span.checked > .slider { background: #09BC8A; }
+.form > form > .checkbox > span.unchecked > .slider { background: #E03616; }
+
+.form > form > .checkbox > span.checked > .slider {
+    left: 0px !important;
+}

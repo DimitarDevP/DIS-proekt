@@ -1,0 +1,33 @@
+.Info {
+    padding: 12px 21px;
+    border-radius: 0.35rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+.Info > p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.Info.error,
+.Info.failure {
+    background-color: #e81500;
+}
+
+.Info.success {
+    background-color: #00ac69;
+}
+
+.Info.warning {
+    background-color: #f4a100;
+}
+
+.Info.undetermined,
+.Info.pending {
+    background-color: #5F7FFb;
+}

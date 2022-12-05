@@ -1,0 +1,75 @@
+.manage-packages {
+    width: 950px;
+    max-width: 95%;
+    margin: 50px auto;
+}
+
+.manage-packages > .package-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #FFF;
+    border-radius: .42rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+    margin-bottom: 40px;
+}
+
+.manage-packages > .package-card > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.manage-packages > .package-card > div:nth-child(1) > * {
+    width: 20%;
+}
+
+.manage-packages > .package-card > div:nth-child(1) > * > h3 {
+    text-align: center;
+}
+
+.manage-packages > .package-card > div:nth-child(1) > * > button {
+    margin-left: auto;
+    margin-right: 0px;
+    display: block;
+    padding: 6px 12px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.manage-packages > .package-card > div:nth-child(1) > span > img {
+    max-width: 120px;
+}
+
+.manage-packages > .package-card > .Info {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width : 950px) {
+    .manage-packages > .package-card > div:nth-child(1) > span:nth-child(1) {
+        display: none;
+    }
+
+    .manage-packages > .package-card > div:nth-child(1) > span:nth-child(2) {
+        width: 30%;
+    }
+
+    .manage-packages > .package-card > div:nth-child(1) > span:nth-child(3) {
+        width: 5%;
+    }
+
+    .manage-packages > .package-card > div:nth-child(1) > span:nth-child(4) {
+        width: 15%;
+    }
+
+    .manage-packages > .package-card > div:nth-child(1) > span:nth-child(5) {
+        width: 40%;
+    }
+
+    .manage-packages > .package-card > div:nth-child(1) > * > h3 {
+        text-align: left;
+        font-size: 0.9em;
+    }
+}

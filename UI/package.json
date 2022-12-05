@@ -1,0 +1,53 @@
+{
+  "name": "frontend",
+  "version": "0.2.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "compressorjs": "^1.0.7",
+    "file-saver": "^2.0.5",
+    "moment-timezone": "^0.5.33",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-modern-calendar-datepicker": "^3.1.6",
+    "react-multi-select-component": "4.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "sheetjs-style-v2": "^0.15.6",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start --openssl-legacy-provider",
+    "build": "react-scripts build --openssl-legacy-provider",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "CONSTANTS": {
+    "API_URL": "http://127.0.0.1:5000/",
+    "STATIC_URL": "http://127.0.0.1:80/"
+  }
+}

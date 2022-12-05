@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+  margin: 0;
+  font-family: Tahoma, "Quicksand", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+
+/* STATUS CODES */
+
+.status {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status > p {
+  padding: 8px;
+  border-radius: 8px;
+  color: #FFF;
+}
+
+p.status.Rejected, .status.Rejected > p, button.Rejected { background: #D64933 !important; }
+p.status.Ordered, .status.Ordered > p, button.Ordered { background: #006CDC !important; }
+p.status.Approved, .status.Approved > p, button.Approved { background: #09BC8A !important; }
+p.status.Paid, .status.Paid > p, button.Paid { background: #7700FF !important; }
+p.status.Dispatched, .status.Dispatched > p, button.Dispatched { background: #EE92C2 !important; }
+
+
+p.status.Completed, .status.Completed > p, button.Completed { background: #7700FF !important; }
+p.status.Active, .status.Active > p, button.Active { background: #09BC8A !important; }
+
+p.status {
+  color: #FFF;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+/* STATUS CODES */

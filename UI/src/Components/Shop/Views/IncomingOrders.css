@@ -1,0 +1,84 @@
+.incoming-orders-container {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    max-width: 95%;
+    margin: -60px auto 100px auto;
+}
+
+.incoming-orders-container > .incoming-orders {
+    background: #FFF;
+    padding: 50px 30px 30px 30px;
+    box-sizing: border-box;
+    border-radius: .42rem;
+    margin: 20px 0px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+}
+
+.incoming-orders-container > .incoming-orders > h2 {
+    color: #444;
+}
+
+.incoming-orders-container > .incoming-orders > hr {
+    margin: 25px auto;
+    color: rgba(31, 45, 65, 0.15);
+}
+
+.incoming-orders-container > .incoming-orders > .incoming-order-item {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.incoming-orders-container > .incoming-orders > .incoming-order-item > .product-info {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.incoming-orders-container > .incoming-orders > p {
+    text-align: center;
+    margin: 50px auto 0px auto;
+    color: #444;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.incoming-orders-container > .incoming-orders > .incoming-order-item > .product-info > img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.incoming-orders-container > .incoming-orders > .incoming-order-item > .date-info {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.incoming-orders-container > .incoming-orders > .incoming-order-item > .instance-info {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.incoming-orders-container > .incoming-orders > .incoming-order-item > .quantity-info {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.incoming-orders-container > .incoming-orders > .incoming-order-item > .arrival-action {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.incoming-orders-container > .incoming-orders > .incoming-order-item > .arrival-action > button {
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 3px 6px;
+}
